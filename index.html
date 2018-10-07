@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Guru Game</title>
+  <meta charset="utf-8">
+  <!-- Guru Game style sheet -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Bootstrap version 3.x -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Bootstrap version 4.x -->
+  <!-- Issues making Bootstrap 4.x work -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+
+  <!-- Display the game screen -->
+  <div class="container">
+
+    <!-- Row 1 - Banner for the game -->
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- <h1>GURU GAME BANNER</h1> -->
+        <img src="assets/images/gurubanner.png">
+      </div>
+    </div>
+
+    <!-- Row 2 has 3 columns -->
+    <div class="row">
+
+      <!-- first column displays instructions and they persist through the game-->
+      <div class="col-lg-3 gameInst">
+        <h1 style="text-align:center"><strong>Instructions</strong></h1>
+        <p>A Match is made up of multiple individual Games.</p>
+        <p>Each game is a single word.</p>
+        <p>All words only have A-Z, a-z - no special characters.</p>
+        <p>You only get 6 misses before the game is over.</p>
+        <p>When one game ends anther starts.</p>
+        <p>Press the quit button to leave the game.</p>
+        <!-- button if the player wishes to start a match-->
+        <button id="playButton" type="button" value="Play">Let's Play</button>
+        <!-- button if the player wishes to quitthe match -->
+        <button id="quitButton" type="button" value="Quit">I'm Out of Here</button>
+      </div>
+
+      <!-- second column displays match and game progress within three sub rows -->
+      <div class="col-lg-6">
+
+        <!-- Top row is Current Word info -->
+        <div class="row board">
+          <div class="wordArea">
+            <h1 style="text-align:center"><strong>Your current word is a Common Animal</strong></h1>
+            <h1 id="currGuess" style="text-align:center"></h1>
+          </div>
+        </div>
+
+        <!-- Second row Current Guess info -->
+        <div class="row board">
+          <div class="guessArea">
+            <h1 style="text-align:center"><strong>Your current guesses are...</strong></h1>
+            <h2 id="lettersUsed" style="text-align:center"></h2>
+            <h2 id="remGuesses" style="text-align:center"></h2>
+          </div>
+        </div>
+
+        <!-- Row 3 is the score area -->
+        <div class="row board">
+          <div class="scoreArea">
+            <h1 style="text-align:center"><strong>Your current score is...</strong></h1>
+            <h2 id="gameWins" style="text-align:center"></h2>
+            <h2 id="gameLosses" style="text-align:center"></h2>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- column 3 is the messaging area where we encourage and insult the user and show the win -->
+      <div class="col-lg-3">
+        <div class="msgArea">
+          <h1 style="text-align:center"><strong>Messages</strong></h1>
+          <img>
+          <p id="feedBack">Welcome to Guru where we stuff your head with fill!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="assets/javascript/game.js" type="text/javascript" >
+  </script>
+
+</body>
+
+</html>
