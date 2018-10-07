@@ -1,0 +1,109 @@
+/* style page for Guru game */
+
+/* Common items */
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* style the entire container */
+.container {
+  max-width: 60%;
+  margin-top: 50px;
+  /* background-color: #ffffff; */
+  border: 1px solid #666666;
+}
+
+.row {
+  background-color: #ffffff;
+  border: 1px solid #666666;
+}
+
+/* style the game header */
+
+
+/* style for the Instructions */
+.board {
+  height: 125px;
+}
+.gameInst {
+  width: 100%;
+  height: 100%;
+  /* background: rgb(138, 201, 138); */
+}
+.gameInst h1 {
+  font-size: 20px;
+  line-height: 25px;
+}
+.gameInst p {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* style for the current word section */
+.wordArea h1 {
+  font-size: 20px;
+}
+
+#currGuess {
+  letter-spacing: 10px;
+}
+
+/* style for the current guess section */
+.guessArea h1 {
+  font-size: 20px;
+}
+.guessArea h2 {
+  font-size: 18px;
+}
+
+#lettersUsed {
+  letter-spacing: 10px;
+}
+
+/* style for the scoring area */
+.scoreArea h1 {
+  font-size: 20px;
+}
+.scoreArea h2 {
+  font-size: 18px;
+}
+
+/* style for the messaging area */
+.msgArea h1 {
+  font-size: 20px;
+}
+
+#currentGame {
+  padding: 5px;
+  border: none;
+}
+
+#currentMatch {
+  padding: 5px;
+  border: none;
+}
+
+#messageArea {
+  padding: 5px;
+  height: 70px;
+  border: none;
+}
+
+input[type=button] {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  float: left;
+  font-size: 16px;
+}
+
+#playButton #quitButton {
+  background-color: #4aaaa5;
+  text-align: center;
+  color: white;
+}
+
+
+
+
